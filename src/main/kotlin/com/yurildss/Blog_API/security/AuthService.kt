@@ -2,6 +2,7 @@ package com.yurildss.Blog_API.security
 
 import com.yurildss.Blog_API.model.RefreshToken
 import com.yurildss.Blog_API.model.User
+import com.yurildss.Blog_API.model.VerificationToken
 import com.yurildss.Blog_API.repository.RefreshTokenRepository
 import com.yurildss.Blog_API.repository.UserRepository
 import org.bson.types.ObjectId
@@ -22,7 +23,8 @@ class AuthService(
     private val jwtService: JwtService,
     private val userRepository: UserRepository,
     private val passwordEncoder: PasswordEncoder,
-    private val refreshTokenRepository: RefreshTokenRepository
+    private val refreshTokenRepository: RefreshTokenRepository,
+    private val verificationToken: VerificationToken
 ) {
     data class TokenPair(
         val accessToken: String,
@@ -50,6 +52,7 @@ class AuthService(
 
         return TokenPair(newAccessToken, newRefreshToken)
     }
+
 
     private fun storeRefreshToken(userId: ObjectId, refreshToken: String) {
         val hashed = hashToken(refreshToken)

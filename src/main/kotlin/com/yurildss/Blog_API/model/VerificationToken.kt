@@ -10,7 +10,7 @@ import java.time.temporal.ChronoUnit
 @Document(collection = "verificationTokens")
 data class VerificationToken(
     @Id var id: ObjectId = ObjectId.get(),
-    val hashedToken: String,
+    val token: String,
     val userId: ObjectId,
     @Indexed(expireAfter = "0s")
     val expirationDate: Instant = Instant.now().plus(1, ChronoUnit.DAYS),
