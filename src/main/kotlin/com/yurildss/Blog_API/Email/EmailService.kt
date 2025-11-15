@@ -13,8 +13,8 @@ class EmailService(
     fun sendEmail(to: String, subject: String, body: String) {
         val message = SimpleMailMessage()
         message.setTo(to)
-        message.setSubject(subject)
-        message.setText(body)
+        message.subject = subject
+        message.text = body
         mailSender.send(message)
     }
 
