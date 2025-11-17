@@ -47,3 +47,14 @@ src/main/kotlin/com/yurildss/Blog_API/
     ├── HashEncoder.kt
     └── SecurityConfig.kt
 
+## 🛠 Tecnologias Utilizadas
+
+- **Kotlin**
+- **Spring Boot**
+- Spring Web  
+- Spring Security (JWT)  
+- Spring Data MongoDB  
+- JavaMailSender  
+- MongoDB com TTL Index  
+- Gradle Kotlin DS
+
