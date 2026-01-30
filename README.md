@@ -18,7 +18,7 @@ O projeto utiliza **MongoDB**, Spring Security e envio de emails via SMTP.
 ---
 
 ## 🏛 Arquitetura do Projeto
-src/main/kotlin/com/yurildss/Blog_API/
+
 <img width="266" height="555" alt="image" src="https://github.com/user-attachments/assets/8d59374d-6a33-4563-bdf9-e27e65a0ba76" />
 
 ## 🛠 Tecnologias Utilizadas
