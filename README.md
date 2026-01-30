@@ -19,33 +19,7 @@ O projeto utiliza **MongoDB**, Spring Security e envio de emails via SMTP.
 
 ## 🏛 Arquitetura do Projeto
 src/main/kotlin/com/yurildss/Blog_API/
-│
-├── controller/
-│   ├── AuthController.kt
-│   ├── BlogNotesController.kt
-│   └── VerificationController.kt
-│
-├── Email/
-│   └── EmailService.kt
-│
-├── model/
-│   ├── BlogNote.kt
-│   ├── Comments.kt
-│   ├── User.kt
-│   ├── RefreshToken.kt
-│   └── VerificationToken.kt
-│
-├── repository/
-│   ├── UserRepository.kt
-│   ├── NoteRepository.kt
-│   └── VerifyUserRepository.kt
-│
-└── security/
-    ├── AuthService.kt
-    ├── JwtService.kt
-    ├── JwtAuthFilter.kt
-    ├── HashEncoder.kt
-    └── SecurityConfig.kt
+<img width="266" height="555" alt="image" src="https://github.com/user-attachments/assets/8d59374d-6a33-4563-bdf9-e27e65a0ba76" />
 
 ## 🛠 Tecnologias Utilizadas
 
