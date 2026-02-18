@@ -3,6 +3,7 @@ package com.yurildss.Blog_API.controller
 import com.yurildss.Blog_API.model.BlogNote
 import com.yurildss.Blog_API.model.Comments
 import com.yurildss.Blog_API.repository.NoteRepository
+import jakarta.validation.constraints.NotBlank
 import org.bson.types.ObjectId
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.web.bind.annotation.DeleteMapping
@@ -19,6 +20,7 @@ class BlogNotesController(private val repository: NoteRepository) {
 
     data class BlogNoteRequest(
         val id: String?,
+        @NotBlank(message = "Body must not be blank")
         val body: String,
         val comments: List<Comments>,
     )
